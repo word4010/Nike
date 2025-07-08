@@ -3,38 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nike</title>
+    <title>Nike - C&R Concept</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=PT+Serif&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="./index.html">
-          <img src="" alt="logo" />
-        </a>
-        <ul>
-          <li><a href="./index.html">Main page</a></li>
-          <li><a href="benefits">Benefits</a></li>
-          <li><a href="advantages">Advantages</a></li>
-          <li><a href="reviews">Reviews</a></li>
-          <li><a href="footer">Contacts</a></li>
-          <li><a href="order">Order</a></li>
-        </ul>
-        <ul>
-          <li><a href="./index.html">Ua</a></li>
-          <li><a href="./index.html">Eng</a></li>
-        </ul>
+    <header class="main-header">
+      <div class="header-content container">
+        <div class="logo">
+          <img src="./img/nike-logo.png" alt="Nike Logo" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Main page</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Advantages</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Order</a></li>
+          </ul>
+        </nav>
+        <div class="language-select">
+          <a href="./index-ua.html">Ukr / Eng</a>
+        </div>
       </div>
     </header>
-    <main class="main">
-        <section class="hero">
-            <div class="container">
-                <img src="" alt="">
-                <h1 class="hero-title"></h1>
-                <h2 class="hero-sub-title"></h2>
-                <p class="hero-text"></p>
-                <a href=" https://www.nike.com">BUY NIKE</a>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content container">
+          <div class="logo">
+            <img src="./img/hero-logo.svg" alt="Nike Logo" />
+          </div>
+          <button class="hero-button">BUY MY NIKE</button>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <img src="./img/star.svg" alt="Quality Icon" />
+              <h3>Premium Quality</h3>
             </div>
-        </section>
+            <div class="feature-item feature-focus">
+              <img src="./img/paint.svg" alt="Paint Icon" />
+              <h3>Indelible paint</h3>
+            </div>
+            <div class="feature-item">
+              <img src="./img/van.svg" alt="Shipping Icon" />
+              <h3>Fast shipping</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="container">
+          <h2>Reviews</h2>
+          <div class="reviews-grid">
+            <div class="review-card">
+              <p>
+                "Sneakers are very comfortable and well made. I will definitely
+                show off in a new style"
+              </p>
+              <h4>John Doe</h4>
+            </div>
+            <div class="review-card">
+              <p>
+                "My legs are very nice for running. This sneakers fit my feet
+                well, so it's a good investment"
+              </p>
+              <h4>Jane Smith</h4>
+            </div>
+            <div class="review-card">
+              <p>
+                "I am happy with my purchase. The color is exactly like in the
+                picture. The paint is really bright and stands out."
+              </p>
+              <h4>Peter Jones</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section">
+        <div class="container">
+          <h2>Order</h2>
+          <form class="order-form">
+            <label for="email" aria-placeholder="Write your email">
+              <input id="email" type="email" placeholder="Write your email" />
+            </label>
+            <label for="text " aria-placeholder="Your Country">
+              <input id="text" type="text" placeholder="Your Country" />
+            </label>
+            <label for="text">
+              <input id="text" type="text" placeholder="Your City" />
+            </label>
+            <button type="submit">Order My Nike</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column contact-info">
+            <h3>Have a question?</h3>
+            <p>Contact us for cooperation?</p>
+            <p>Advertising question?</p>
+          </div>
+          <div class="footer-column emails">
+            <p>oldnew.nikesupport@gmail.com</p>
+            <p>Cooperation.nikesup@gmail.com</p>
+            <p>Goldeffect.nikesupport@gmail.com</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 C&R. All rights reserved</p>
+          <p>United States</p>
+        </div>
+        <div class="footer-logo">
+          <img src="./img/nike-logo.png" alt="Nike Logo" />
+          <span>C&R</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
