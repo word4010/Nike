@@ -99,7 +99,7 @@ h2 {
 }
 
 .language-select a {
-  color: var(--text-light)
+  color: var(--text-light);
   text-decoration: none;
   font-weight: 300;
 }
@@ -190,10 +190,6 @@ font-size: 18px;
   margin-top: 30px;
 }
 
-.features-grid:nth-child(2){
-  display: flex;
-  flex-direction: ;
-}
 
 
 .feature-item {
@@ -205,6 +201,12 @@ font-size: 18px;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+
+
+.feature-item:nth-child(2){
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .feature-item img {
@@ -312,8 +314,8 @@ font-size: 18px;
   text-align: left;
 }
 
-.footer-column.email{
-  
+.footer-column.emails{
+  text-align: right;
 }
 
 .footer-column h3 {
@@ -333,7 +335,7 @@ font-size: 18px;
 }
 
 .copyright::before{
-content="" 
+content:"";
 
 }
 
