@@ -190,6 +190,12 @@ font-size: 18px;
   margin-top: 30px;
 }
 
+.features-grid:nth-child(2){
+  display: flex;
+  flex-direction: ;
+}
+
+
 .feature-item {
   background-color: #1a0846;
   padding: 30px;
@@ -306,6 +312,10 @@ font-size: 18px;
   text-align: left;
 }
 
+.footer-column.email{
+  
+}
+
 .footer-column h3 {
   font-family: var(--font-family);
   font-size: 1.2em;
@@ -319,7 +329,12 @@ font-size: 18px;
 }
 
 .copyright {
-  margin-top: 20px;
+  margin-top: 20px; 
+}
+
+.copyright::before{
+content="" 
+
 }
 
 .footer-logo {
