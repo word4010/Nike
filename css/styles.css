@@ -7,7 +7,7 @@
   --light-purple-gradient-end: #b100ff;
   --text-light: #ffffff;
   --text-grey: #cccccc;
-  --button-text-color:  rgb(95, 95, 95) ;
+  --button-text-color: rgb(95, 95, 95);
   --button-background: linear-gradient(to right, #6a00ff, #b100ff);
   --my-button-color: linear-gradient(to right, #6a00ff, #b100ff);
   --main-text-color: #ffffff;
@@ -58,11 +58,10 @@ h2 {
 
 .logo {
   display: flex;
-  
+
   align-items: center;
   font-size: 1.8em;
   font-weight: 700;
-  
 }
 
 .logo img {
@@ -73,8 +72,6 @@ h2 {
 .logo span {
   color: var(--text-light);
 }
-
-
 
 .main-nav ul {
   list-style: none;
@@ -87,16 +84,18 @@ h2 {
   text-decoration: none;
   font-weight: 300;
   transition: color 0.3s ease;
-  
 }
 
 .main-nav a:hover {
-  color: var(--text-light);
+  color: var(--text-grey);
 }
 
-.language-select{
-  
- padding-right: 165px;
+.main-nav a:active {
+  color: var(--text-grey);
+}
+
+.language-select {
+  padding-right: 165px;
 }
 
 .language-select a {
@@ -105,6 +104,9 @@ h2 {
   font-weight: 300;
 }
 
+.language-select a:hover {
+  color: var(--text-grey);
+}
 
 .hero-section {
   background-image: url("../img/bachground-hero.jpg"),
@@ -120,35 +122,34 @@ h2 {
   padding: 94px 0 182px 0px;
 }
 
-.hero-logo{
+.hero-logo {
   width: 203px;
-height: 171px;
+  height: 171px;
 }
 
-.hero-title{
+.hero-title {
   width: 640px;
   height: 192px;
   font-family: var(--second-family);
-font-weight: 400;
-font-size: 144px;
+  font-weight: 400;
+  font-size: 144px;
 }
 
-.hero-subtitle{
+.hero-subtitle {
   width: 540px;
   height: 96px;
   font-family: var(--second-family);
-font-weight: 400;
-font-size: 72px;
-padding-bottom: 12px
+  font-weight: 400;
+  font-size: 72px;
+  padding-bottom: 12px;
 }
 
-.hero-text{
+.hero-text {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 18px;
-padding-bottom: 41px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 41px;
 }
-
 
 .hero-button {
   display: inline-block;
@@ -160,6 +161,12 @@ padding-bottom: 41px;
   border-radius: 10px;
   padding: 20px 60px;
   text-decoration: none;
+  margin-bottom: 183px;
+}
+
+.hero-button:hover {
+  border: outset var(--light-purple-gradient-end);
+  transform: translateY(-2px);
 }
 
 .shoe-image-placeholder {
@@ -193,23 +200,24 @@ padding-bottom: 41px;
   margin-top: 30px;
 }
 
-
+.features-section {
+  background-image: url(../img/featers-bachground.jpg);
+}
 
 .feature-item {
-  background-color: #1a0846;
+  /* background-color: #1a0846; */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   gap: 15px;
 }
 
-
-.feature-item:nth-child(2){
+.feature-item:nth-child(2) {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .feature-item img {
@@ -221,6 +229,10 @@ padding-bottom: 41px;
   font-family: var(--font-family);
   font-size: 1.5em;
   color: var(--text-light);
+}
+
+.reviews-section {
+  background-image: url(../img/reviews-bachground.jpg);
 }
 
 .reviews-grid {
@@ -256,6 +268,10 @@ padding-bottom: 41px;
   color: var(--text-light);
 }
 
+.order-section {
+  background-image: url(../img/order-bachground.jpg);
+}
+
 .order-form {
   display: flex;
   flex-direction: column;
@@ -281,10 +297,15 @@ padding-bottom: 41px;
   color: var(--button-text-color);
 }
 
+.order-text-link {
+  color: var(--text-grey);
+}
+
 .order-form button {
   background: var(--button-background);
   color: white;
   padding: 15px 30px;
+  margin-bottom: 37px;
   border: none;
   border-radius: 5px;
   font-size: 1.1em;
@@ -293,6 +314,7 @@ padding-bottom: 41px;
 }
 
 .order-form button:hover {
+  border: outset var(--light-purple-gradient-end);
   transform: translateY(-2px);
 }
 
@@ -318,8 +340,12 @@ padding-bottom: 41px;
   text-align: left;
 }
 
-.footer-column.emails{
+.footer-column.emails {
   text-align: right;
+}
+
+.footer-column:hover {
+  color: var(--text-grey);
 }
 
 .footer-column h3 {
@@ -335,12 +361,12 @@ padding-bottom: 41px;
 }
 
 .copyright {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
-.copyright::before{
-content:"";
-color:#9b9b9b ;
+.copyright::before {
+  content: "";
+  color: #9b9b9b;
 }
 
 .footer-logo {
