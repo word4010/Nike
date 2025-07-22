@@ -5,12 +5,17 @@
   --dark-blue-background: #0d0628;
   --light-purple-gradient-start: #6a00ff;
   --light-purple-gradient-end: #b100ff;
+  --header-text-grey: rgb(199, 199, 199) ; /* C7C7C7 */
   --text-light: #ffffff;
   --text-grey: #cccccc;
-  --button-text-color: rgb(95, 95, 95);
+  --header-bg-color: rgb(1, 45, 99); /* header bg color  Midnight blue */
+  --button-text-color: rgb(95, 95, 95); /* Можливо, цей колір більше не потрібен, якщо плейсхолдер білий */
   --button-background: linear-gradient(to right, #6a00ff, #b100ff);
   --my-button-color: linear-gradient(to right, #6a00ff, #b100ff);
   --main-text-color: #ffffff;
+  
+  --input-background: #1a0846; /* Нова змінна для фону полів вводу */
+  --input-border: rgba(255, 255, 255, 0.5); /* Нова змінна для обводки полів вводу */
 }
 
 * {
@@ -21,17 +26,20 @@
 
 body {
   font-family: var(--font-family);
-  color: var(--text-light);
+  color: var(--text-light);  
   background-color: var(--dark-blue-background);
   line-height: 1.6;
   overflow-x: hidden;
+  /* Додано фонове зображення для всього тіла */
+  background-image: url(""); 
+  background-repeat: repeat;  */
+  background-size: cover; 
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
-  outline: solid red;
 }
 
 h2 {
@@ -43,7 +51,8 @@ h2 {
 }
 
 .main-header {
-  background-color: var(--dark-blue-background);
+  background-color: var(--header-bg-color);
+  font-family: var(--header-text-grey);
   padding: 16px 0;
   position: relative;
   z-index: 100;
@@ -58,7 +67,6 @@ h2 {
 
 .logo {
   display: flex;
-
   align-items: center;
   font-size: 1.8em;
   font-weight: 700;
@@ -162,25 +170,14 @@ h2 {
   padding: 20px 60px;
   text-decoration: none;
   margin-bottom: 183px;
+  border: outset var(--light-purple-gradient-start); 
 }
 
 .hero-button:hover {
-  border: outset var(--light-purple-gradient-end);
+  border: 2px outset var(--light-purple-gradient-end);
   transform: translateY(-2px);
 }
 
-.shoe-image-placeholder {
-  position: absolute;
-  bottom: 0;
-  right: 5%;
-  width: 60%;
-  max-width: 800px;
-  height: auto;
-  background-image: url("path/to/your/shoe_image.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
 
 .features-section,
 .reviews-section,
@@ -205,7 +202,7 @@ h2 {
 }
 
 .feature-item {
-  /* background-color: #1a0846; */
+  /* background-color: #1a0846; */ /* Цей коментар може бути видалений або розкоментований, якщо потрібен фон */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -217,7 +214,7 @@ h2 {
 
 .feature-item:nth-child(2) {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .feature-item img {
@@ -241,15 +238,31 @@ h2 {
   gap: 30px;
   margin-top: 30px;
 }
-
 .review-card {
-  background-color: #1a0846;
+  border-radius: 15px;
+width: 255px;
+height: 292px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.review-card:nth-child(1){
+box-shadow: 0 30px 0 0 #533978, 0 14px 0 0 #7b54b2, 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
+}
+
+.review-card:nth-child(2){
+  box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1; 
+background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%); 
+}
+
+.review-card:nth-child(3){
+box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
+background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
 }
 
 .review-card p {
@@ -264,7 +277,7 @@ h2 {
   font-family: var(--font-family);
   font-size: 1em;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
   color: var(--text-light);
 }
 
@@ -279,26 +292,36 @@ h2 {
   gap: 20px;
   max-width: 500px;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 50px; 
 }
+
+#orderEmail{
+  border-radius: 50px;
+width: 690px;
+height: 60px;
+}
+
+
 
 .order-form input[type="email"],
 .order-form input[type="text"] {
   width: 100%;
   padding: 15px 20px;
-  border-radius: 5px;
-  border: 1px solid var(--text-grey);
-  background-color: var(--text-light);
-  color: var(--text-light);
+  border-radius: 25px;
+  border: 1px solid var(--input-border);
+  background-color: var(--main-text-color);
+  color: var(--button-text-color); 
   font-size: 1em;
 }
 
+
 .order-form input::placeholder {
-  color: var(--button-text-color);
+  color: var(--text-grey);
 }
 
 .order-text-link {
   color: var(--text-grey);
+  text-decoration: none;
 }
 
 .order-form button {
@@ -314,7 +337,7 @@ h2 {
 }
 
 .order-form button:hover {
-  border: outset var(--light-purple-gradient-end);
+  border: 2px outset var(--light-purple-gradient-end); 
   transform: translateY(-2px);
 }
 
@@ -345,7 +368,7 @@ h2 {
 }
 
 .footer-column:hover {
-  color: var(--text-grey);
+  color: var(--text-light);
 }
 
 .footer-column h3 {
@@ -367,12 +390,13 @@ h2 {
 .copyright::before {
   content: "";
   color: #9b9b9b;
+
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right; 
   font-size: 1.5em;
   font-weight: 700;
   margin-top: 20px;
