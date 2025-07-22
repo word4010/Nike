@@ -273,6 +273,7 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
   color: var(--text-grey);
 }
 
+
 .review-card h4 {
   font-family: var(--font-family);
   font-size: 1em;
@@ -280,6 +281,15 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
   text-align: left;
   color: var(--text-light);
 }
+
+
+.rewiew-img{
+  width: 31px;
+  height: 31px;
+  border-radius: 100%;
+  padding-right: 5px;
+}
+
 
 .order-section {
   background-image: url(../img/order-bachground.jpg);
@@ -300,7 +310,6 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
 width: 690px;
 height: 60px;
 }
-
 
 
 .order-form input[type="email"],
