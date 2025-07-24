@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ukr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike - C&R Concept</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=PT+Serif&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header" class="main-header">
+      <div class="header-content container">
+        <div class="logo">
+          <img src="./img/nike-logo.png" alt="Логотип Nike" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="./index.html">Головна сторінка</a></li>
+            <li><a href="#">Деталі</a></li>
+            <li><a href="#">Переваги</a></li>
+            <li><a href="#">Відгуки</a></li>
+            <li><a href="#footer">Контакти</a></li>
+            <li><a href="#">Замовити</a></li>
+          </ul>
+        </nav>
+        <div class="language-select">
+          <a href="./index-ua.html">Укр </a>
+          <a href="./index.html">Англ </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-logo">
+            <img src="./img/hero-logo.svg" alt="Логотип Nike" />
+          </div>
+          <h1 class="hero-title">ColorRawe</h1>
+          <h2 class="hero-subtitle">Твій Nike мрії</h2>
+          <p class="hero-text">
+            На цьому сайті ти знайдеш кастомні кросівки Nike своєї мрії.
+            <br />
+            Оригінальна компанія не може створювати такі красиві кросівки, як ми.
+            <br />
+            Бажаємо успіху у світі кастомних кросівок.
+          </p>
+          <button class="hero-button">КУПИТИ МІЙ NIKE</button>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <h2>Особливості</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <img src="./img/star.svg" alt="Іконка якості" />
+              <h3>Преміум якість</h3>
+            </div>
+            <div class="feature-item feature-focus">
+              <img src="./img/paint.svg" alt="Іконка фарби" />
+              <h3>Нестираюча фарба</h3>
+            </div>
+            <div class="feature-item">
+              <img src="./img/van.svg" alt="Іконка доставки" />
+              <h3>Швидка доставка</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="container">
+          <h2>Відгуки</h2>
+          <div class="reviews-grid">
+            <div class="review-card">
+              <p>
+                Кросівки дуже зручні та гарно пофарбовані, за рік нічого не
+                стерлося.
+              </p>
+              <h5>25.11</h5>
+              <img class="review-img" width="31px" height="31px" src="./img/jhon.png" alt="Джон Доу">
+              <h4 class="sub-text-rewiews">Джон Доу</h4>
+              <h6>з нами з 2018</h6>
+            </div>
+            <div class="review-card">
+              <p>
+                Я дуже задоволений цією кольоровою гамою. Вони пасують до всього
+                мого одягу.
+              </p>
+              <h5>05.01</h5>
+              <img class="review-img" width="31px" height="31px" src="./img/elizabeth.png" alt="Джейн Сміт">
+              <h4 class="sub-text-rewiews">Джейн Сміт</h4>
+              <h6>з нами з 2020</h6>
+            </div>
+            <div class="review-card">
+              <p>
+                Саме те, якщо потрібно піти на вечірку. Активно ними користуюся,
+                фарба супер.
+              </p>
+              <h5>18.06</h5>
+              <img class="review-img" width="31px" height="31px" src="./img/tom.png" alt="Пітер Джонс">
+              <h4 class="sub-text-rewiews">Пітер Джонс</h4>
+              <h6>з нами з 2019</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section">
+        <div class="container">
+          <h2>Замовлення</h2>
+          <form class="order-form">
+            <label for="orderEmail">
+              <input
+                id="orderEmail"
+                type="email"
+                placeholder="Введіть ваш email"
+              />
+            </label>
+            <a class="order-text-link" href="./index.html">Підтвердити</a>
+            <label for="orderCountry">
+              <input id="orderCountry" type="text" placeholder="Ваша Країна" />
+            </label>
+            <label for="orderCity">
+              <input id="orderCity" type="text" placeholder="Ваше Місто" />
+            </label>
+            <label for="orderAddress">
+              <input id="orderAddress" type="text" placeholder="Ваша Адреса" />
+            </label>
+            <button class="hero-button" type="submit">Замовити Мій Nike</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="main-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div class="footer-column contact-info">
+            <h3>Маєте запитання?</h3>
+            <p>Маєте пропозицію для співпраці?</p>
+            <p>Питання щодо реклами?</p>
+          </div>
+          <div class="footer-column emails">
+            <p>ColoRawe_support@gmail.com</p>
+            <p>ColorRawe_Cooperation@gmail.com</p>
+            <p>ColorRawe_Advertising@gmail.com</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 C&R. Всі права захищені</p>
+          <p>Сполучені Штати</p>
+        </div>
+        <div class="footer-logo">
+          <img src="./img/nike-logo.png" alt="Логотип Nike" />
+          <span>C&R</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

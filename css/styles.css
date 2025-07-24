@@ -31,7 +31,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   /* Додано фонове зображення для всього тіла */
-  background-image: url(""); 
   background-repeat: repeat;  */
   background-size: cover; 
 }
