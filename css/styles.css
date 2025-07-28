@@ -30,7 +30,6 @@ body {
   background-color: var(--dark-blue-background);
   line-height: 1.6;
   overflow-x: hidden;
-  /* Додано фонове зображення для всього тіла */
   background-repeat: repeat;  */
   background-size: cover; 
 }
@@ -177,7 +176,6 @@ h2 {
   transform: translateY(-2px);
 }
 
-
 .features-section,
 .reviews-section,
 .order-section,
@@ -197,11 +195,13 @@ h2 {
 }
 
 .features-section {
-  background-image: url(../img/featers-bachground.jpg);
+  background-image: url(../img/fuaters-bacground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .feature-item {
-  /* background-color: #1a0846; */ /* Цей коментар може бути видалений або розкоментований, якщо потрібен фон */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -229,6 +229,8 @@ h2 {
 
 .reviews-section {
   background-image: url(../img/reviews-bachground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews-grid {
@@ -236,6 +238,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 30px;
+  justify-items: center;
 }
 .review-card {
   border-radius: 15px;
