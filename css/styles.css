@@ -188,6 +188,7 @@ h2 {
 
 .features-grid {
   display: grid;
+   border: solid  darkorchid ;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   text-align: center;
@@ -195,11 +196,16 @@ h2 {
 }
 
 .features-section {
-  background-image: url(../img/fuaters-bacground.jpg);
+  background-image: url(../img/feauter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+ 
 }
+
+
+
+
 
 .feature-item {
   padding: 30px;
@@ -209,6 +215,7 @@ h2 {
   flex-direction: column-reverse;
   align-items: center;
   gap: 15px;
+  
 }
 
 .feature-item:nth-child(2) {
@@ -228,9 +235,10 @@ h2 {
 }
 
 .reviews-section {
-  background-image: url(../img/reviews-bachground.jpg);
+  background-image: url(../img/rewiew-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .reviews-grid {
@@ -295,6 +303,9 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
 
 .order-section {
   background-image: url(../img/order-bachground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .order-form {
